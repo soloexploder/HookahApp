@@ -9,7 +9,7 @@ import UIKit
 
 class MenuViewController: UITableViewController {
 
-    var products: [Product] = []
+    var products = Product.getProduct()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,25 +23,25 @@ class MenuViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+    
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        products.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "menuCell", for: indexPath)
 
-        // Configure the cell...
-
+        let product = products[indexPath.row]
+        
+        var content = cell.defaultContentConfiguration()
+        content.text = product.name
+        content.secondaryText = product.tastes
+        cell.contentConfiguration = content
+        
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

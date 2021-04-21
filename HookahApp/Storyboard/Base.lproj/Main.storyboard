@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--TioViewController-->
+        <!--TioStoryBoard-->
         <scene sceneID="CxU-V2-YJg">
             <objects>
-                <viewControllerPlaceholder storyboardName="TioStoryBoard" referencedIdentifier="TioViewController" id="KjE-Gy-1YI" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="TioStoryBoard" referencedIdentifier="TioStoryBoard" id="KjE-Gy-1YI" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="nTl-ii-OTs"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6e6-3n-bci" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -87,7 +87,7 @@
         <!--DenStoryBoard-->
         <scene sceneID="cZp-MH-2yb">
             <objects>
-                <viewControllerPlaceholder storyboardName="DenStoryBoard" id="UmQ-gs-8Z8" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="DenStoryBoard" referencedIdentifier="DenStoryBoard" id="UmQ-gs-8Z8" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="hqW-g5-Ioy"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hV3-kd-crt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

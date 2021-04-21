@@ -10,32 +10,27 @@
 struct Product {
     
     let name: String
-    let tastes: [String]
+    let tastes: String
     let tobacco: String
     
+    
+}
+
+extension Product{
     static func getProduct() -> [Product] {
         [
-            Product(
-                name: "Крымский Вайб",
-                tastes: ["дыня, арбуз, персик"],
-                tobacco: "Duft"
-            ),
-            
-            Product(
-                name: "Камчатский панч",
-                tastes: ["дыня, чай, черника"],
-                tobacco: "Duft"
-            ),
+            Product(name: "Крымский Вайб", tastes: "дыня, арбуз, персик", tobacco: "Duft"),
+            Product(name: "Камчатский панч", tastes: "дыня, чай, черника", tobacco: "Duft"),
             
             Product(
                 name: "Донской чилл",
-                tastes: ["нуга, дыня, лимон"],
+                tastes: "нуга, дыня, лимон",
                 tobacco: "Duft"
             ),
             
             Product(
                 name: "Приморский шейк",
-                tastes: ["черника, кокос, ананас"],
+                tastes: "черника, кокос, ананас",
                 tobacco: "Duft"
             )
         ]
@@ -55,22 +50,29 @@ enum Mix: String {
     
     var mixer: String {
         switch self {
+        
         case .melon:
-            <#code#>
+            return """
+                    Донской чилл. Состав: нуга, дыня, лимон. Табак: "Duft".
+                    Камчатский панч. Состав: дыня, чай, черника. Табак: "Duft".
+                                    name: "Крымский Вайб",
+                                    tastes: ["дыня, арбуз, персик"],
+                                    tobacco: "Duft"
+                    """
         case .watermelon:
-            <#code#>
+            return "арбуз ммм"
         case .peach:
-            <#code#>
+            return "персик ммм"
         case .tea:
-            <#code#>
+            return "чай ммм"
         case .blueberry:
-            <#code#>
+            return "черника ммм"
         case .lemon:
-            <#code#>
+            return "лимон ммм"
         case .coconut:
-            <#code#>
+            return "кокос ммм"
         case .pineapple:
-            <#code#>
+            return "ананас ммм"
         }
     }
 }
