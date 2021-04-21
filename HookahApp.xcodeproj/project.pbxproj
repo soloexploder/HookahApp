@@ -12,6 +12,8 @@
 		49D967F5263016620025311A /* TobaccoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D967F4263016620025311A /* TobaccoViewController.swift */; };
 		49D967FA2630169C0025311A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D967F92630169C0025311A /* TabBarViewController.swift */; };
 		49D96805263017D50025311A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D96804263017D50025311A /* Product.swift */; };
+		49D9680D263026A00025311A /* TioStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D9680C263026A00025311A /* TioStoryBoard.storyboard */; };
+		49D96810263028210025311A /* DenStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D9680F263028210025311A /* DenStoryBoard.storyboard */; };
 		8B560CFD262DCCF100BB1849 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B560CFC262DCCF100BB1849 /* AppDelegate.swift */; };
 		8B560CFF262DCCF100BB1849 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B560CFE262DCCF100BB1849 /* SceneDelegate.swift */; };
 		8B560D04262DCCF100BB1849 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B560D02262DCCF100BB1849 /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 		49D967F4263016620025311A /* TobaccoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TobaccoViewController.swift; sourceTree = "<group>"; };
 		49D967F92630169C0025311A /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		49D96804263017D50025311A /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		49D9680C263026A00025311A /* TioStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TioStoryBoard.storyboard; sourceTree = "<group>"; };
+		49D9680F263028210025311A /* DenStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DenStoryBoard.storyboard; sourceTree = "<group>"; };
 		8B560CF9262DCCF100BB1849 /* HookahApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HookahApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B560CFC262DCCF100BB1849 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B560CFE262DCCF100BB1849 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 			isa = PBXGroup;
 			children = (
 				8B560D02262DCCF100BB1849 /* Main.storyboard */,
+				49D9680C263026A00025311A /* TioStoryBoard.storyboard */,
+				49D9680F263028210025311A /* DenStoryBoard.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -160,8 +166,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49D9680D263026A00025311A /* TioStoryBoard.storyboard in Resources */,
 				8B560D09262DCCFB00BB1849 /* LaunchScreen.storyboard in Resources */,
 				8B560D06262DCCFB00BB1849 /* Assets.xcassets in Resources */,
+				49D96810263028210025311A /* DenStoryBoard.storyboard in Resources */,
 				8B560D04262DCCF100BB1849 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
