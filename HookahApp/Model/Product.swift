@@ -6,57 +6,78 @@
 //
 
 struct Product {
-    
+
     let name: String
     let tobacco: String
-    let tastes: [Taste]
+//    let tastes: [Taste]
 
-    static func getProduct() -> [Product] {
-        
+    static func getProduct() -> [Product]{
+
             [
                 Product(name: "Крымский Вайб",
-                        tobacco: "Duft",
-                        tastes: [
-                            Taste(title: "дыня", type: .melon),
-                            Taste(title: "арбуз", type: .watermelon),
-                            Taste(title: "персик", type: .peach)
-            ]),
-            
+                        tobacco: "Duft"
+//                        tastes: [
+//                            Taste(title: "дыня", type: .melon),
+//                            Taste(title: "арбуз", type: .watermelon),
+//                            Taste(title: "персик", type: .peach)
+//            ]
+                        ),
+
                 Product(name: "Камчатский панч",
-                        tobacco: "Duft",
-                        tastes: [
-                            Taste(title: "дыня", type: .melon),
-                            Taste(title: "чай", type: .watermelon),
-                            Taste(title: "черника", type: .peach)
-            ]),
-            
+                        tobacco: "Duft"
+//                        tastes: [
+//                            Taste(title: "дыня", type: .melon),
+//                            Taste(title: "чай", type: .watermelon),
+//                            Taste(title: "черника", type: .peach)
+//            ]
+                        ),
+
                 Product(name: "Донской чилл",
-                        tobacco: "Duft",
-                        tastes: [
-                            Taste(title: "нуга", type: .melon),
-                            Taste(title: "дыня", type: .watermelon),
-                            Taste(title: "лимон", type: .peach)
-            ]),
-            
+                        tobacco: "Duft"
+//                        tastes: [
+//                            Taste(title: "ананас", type: .melon),
+//                            Taste(title: "дыня", type: .watermelon),
+//                            Taste(title: "лимон", type: .peach)
+//            ]
+                        ),
+
                 Product(name: "Приморский шейк",
-                        tobacco: "Duft",
-                        tastes: [
-                            Taste(title: "черника", type: .melon),
-                            Taste(title: "кокос", type: .watermelon),
-                            Taste(title: "ананас", type: .peach)
-            ]),  
-        ]   
+                        tobacco: "Duft"
+//                        tastes: [
+//                            Taste(title: "черника", type: .melon),
+//                            Taste(title: "кокос", type: .watermelon),
+//                            Taste(title: "ананас", type: .peach)
+//            ]
+                        )
+        ]
     }
 }
 
 struct Taste {
     let title: String
     let type: Mix
+    
+    static func getTaste() -> [Taste] {
+        [
+            Taste(title: "дыня", type: .melon),
+            Taste(title: "арбуз", type: .watermelon),
+            Taste(title: "персик", type: .peach),
+            Taste(title: "чай", type: .watermelon),
+            Taste(title: "черника", type: .peach),
+            Taste(title: "лимон", type: .peach),
+            Taste(title: "кокос", type: .watermelon),
+            Taste(title: "ананас", type: .peach)
+        ]
+    }
 }
 
 enum Mix: String {
         
-    case melon = "дыня"
+    case melon = """
+                 Донской чилл. Состав: нуга, дыня, лимон. Табак: "Duft".
+                 Камчатский панч. Состав: дыня, чай, черника. Табак: "Duft".
+                 Крымский Вайб. Состав: дыня, арбуз, персик. Табак: "Duft"
+                 """
     case watermelon = "арбуз"
     case peach = "персик"
     case tea = "чай"
@@ -67,13 +88,8 @@ enum Mix: String {
     
     var mixer: String {
         switch self {
-        
         case .melon:
-            return """
-                    Донской чилл. Состав: нуга, дыня, лимон. Табак: "Duft".
-                    Камчатский панч. Состав: дыня, чай, черника. Табак: "Duft".
-                    Крымский Вайб. Состав: дыня, арбуз, персик. Табак: "Duft"
-                    """
+            return "melon"
         case .watermelon:
             return "арбуз ммм"
         case .peach:

@@ -161,11 +161,44 @@
                         <outletCollection property="tasteButtons" destination="HXg-29-REA" collectionClass="NSMutableArray" id="fnS-6i-V8l"/>
                         <outletCollection property="tasteButtons" destination="888-jx-Mpn" collectionClass="NSMutableArray" id="db3-Bu-jeb"/>
                         <outletCollection property="tasteButtons" destination="fXi-sP-i4a" collectionClass="NSMutableArray" id="5jg-k3-azt"/>
+                        <segue destination="O93-iH-hY1" kind="show" identifier="showChoiceResult" id="OCc-nG-SEP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KwB-WH-1sh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-504.34782608695656" y="986.38392857142856"/>
+        </scene>
+        <!--Mix Choice View Controller-->
+        <scene sceneID="RLV-IY-16k">
+            <objects>
+                <viewController id="O93-iH-hY1" customClass="MixChoiceViewController" customModule="HookahApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kpx-5g-woJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpf-I9-QN1">
+                                <rect key="frame" x="16" y="422" width="382" height="52.5"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uYm-AV-wAC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dpf-I9-QN1" firstAttribute="leading" secondItem="uYm-AV-wAC" secondAttribute="leading" constant="16" id="2HX-z9-qjG"/>
+                            <constraint firstItem="dpf-I9-QN1" firstAttribute="centerY" secondItem="Kpx-5g-woJ" secondAttribute="centerY" id="7og-0s-cWI"/>
+                            <constraint firstItem="uYm-AV-wAC" firstAttribute="trailing" secondItem="dpf-I9-QN1" secondAttribute="trailing" constant="16" id="Tyd-7h-Z8c"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ngm-0G-4oi"/>
+                    <connections>
+                        <outlet property="mixDescription" destination="dpf-I9-QN1" id="UOM-0B-cMP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qzc-Rz-cPJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-504.34782608695656" y="1673.4375"/>
         </scene>
     </scenes>
     <resources>
