@@ -7,23 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49D967EF263016240025311A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D967EE263016240025311A /* MenuViewController.swift */; };
+		49D967F2263016370025311A /* MixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D967F1263016370025311A /* MixViewController.swift */; };
+		49D967F5263016620025311A /* TobaccoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D967F4263016620025311A /* TobaccoViewController.swift */; };
+		49D967FA2630169C0025311A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D967F92630169C0025311A /* TabBarViewController.swift */; };
+		49D96805263017D50025311A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D96804263017D50025311A /* Product.swift */; };
+		49D9680D263026A00025311A /* TioStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D9680C263026A00025311A /* TioStoryBoard.storyboard */; };
+		49D96810263028210025311A /* DenStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D9680F263028210025311A /* DenStoryBoard.storyboard */; };
 		8B560CFD262DCCF100BB1849 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B560CFC262DCCF100BB1849 /* AppDelegate.swift */; };
 		8B560CFF262DCCF100BB1849 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B560CFE262DCCF100BB1849 /* SceneDelegate.swift */; };
-		8B560D01262DCCF100BB1849 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B560D00262DCCF100BB1849 /* ViewController.swift */; };
 		8B560D04262DCCF100BB1849 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B560D02262DCCF100BB1849 /* Main.storyboard */; };
 		8B560D06262DCCFB00BB1849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B560D05262DCCFB00BB1849 /* Assets.xcassets */; };
 		8B560D09262DCCFB00BB1849 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B560D07262DCCFB00BB1849 /* LaunchScreen.storyboard */; };
+		ABA4C3F9263030CB0075B717 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA4C3F8263030CB0075B717 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49D967EE263016240025311A /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		49D967F1263016370025311A /* MixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixViewController.swift; sourceTree = "<group>"; };
+		49D967F4263016620025311A /* TobaccoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TobaccoViewController.swift; sourceTree = "<group>"; };
+		49D967F92630169C0025311A /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		49D96804263017D50025311A /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		49D9680C263026A00025311A /* TioStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TioStoryBoard.storyboard; sourceTree = "<group>"; };
+		49D9680F263028210025311A /* DenStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DenStoryBoard.storyboard; sourceTree = "<group>"; };
 		8B560CF9262DCCF100BB1849 /* HookahApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HookahApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B560CFC262DCCF100BB1849 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B560CFE262DCCF100BB1849 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8B560D00262DCCF100BB1849 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8B560D03262DCCF100BB1849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B560D05262DCCFB00BB1849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B560D08262DCCFB00BB1849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B560D0A262DCCFB00BB1849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABA4C3F8263030CB0075B717 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailsViewController.swift; path = HookahApp/ViewControllers/DetailsViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +51,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49D967F7263016720025311A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				49D967F92630169C0025311A /* TabBarViewController.swift */,
+				49D967EE263016240025311A /* MenuViewController.swift */,
+				49D967F1263016370025311A /* MixViewController.swift */,
+				49D967F4263016620025311A /* TobaccoViewController.swift */,
+				ABA4C3F8263030CB0075B717 /* DetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		49D96800263017BB0025311A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				49D96804263017D50025311A /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		49D96807263017EA0025311A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8B560D02262DCCF100BB1849 /* Main.storyboard */,
+				49D9680C263026A00025311A /* TioStoryBoard.storyboard */,
+				49D9680F263028210025311A /* DenStoryBoard.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		8B560CF0262DCCF100BB1849 = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +100,11 @@
 		8B560CFB262DCCF100BB1849 /* HookahApp */ = {
 			isa = PBXGroup;
 			children = (
+				49D967F7263016720025311A /* ViewControllers */,
+				49D96800263017BB0025311A /* Model */,
+				49D96807263017EA0025311A /* Storyboard */,
 				8B560CFC262DCCF100BB1849 /* AppDelegate.swift */,
 				8B560CFE262DCCF100BB1849 /* SceneDelegate.swift */,
-				8B560D00262DCCF100BB1849 /* ViewController.swift */,
-				8B560D02262DCCF100BB1849 /* Main.storyboard */,
 				8B560D05262DCCFB00BB1849 /* Assets.xcassets */,
 				8B560D07262DCCFB00BB1849 /* LaunchScreen.storyboard */,
 				8B560D0A262DCCFB00BB1849 /* Info.plist */,
@@ -124,8 +169,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49D9680D263026A00025311A /* TioStoryBoard.storyboard in Resources */,
 				8B560D09262DCCFB00BB1849 /* LaunchScreen.storyboard in Resources */,
 				8B560D06262DCCFB00BB1849 /* Assets.xcassets in Resources */,
+				49D96810263028210025311A /* DenStoryBoard.storyboard in Resources */,
 				8B560D04262DCCF100BB1849 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,9 +184,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B560D01262DCCF100BB1849 /* ViewController.swift in Sources */,
 				8B560CFD262DCCF100BB1849 /* AppDelegate.swift in Sources */,
 				8B560CFF262DCCF100BB1849 /* SceneDelegate.swift in Sources */,
+				49D967EF263016240025311A /* MenuViewController.swift in Sources */,
+				ABA4C3F9263030CB0075B717 /* DetailsViewController.swift in Sources */,
+				49D967F2263016370025311A /* MixViewController.swift in Sources */,
+				49D967FA2630169C0025311A /* TabBarViewController.swift in Sources */,
+				49D967F5263016620025311A /* TobaccoViewController.swift in Sources */,
+				49D96805263017D50025311A /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
