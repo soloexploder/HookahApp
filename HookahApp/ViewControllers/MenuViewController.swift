@@ -25,22 +25,16 @@ class MenuViewController: UITableViewController {
 
     
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        products.count
-    }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "menuCell", for: indexPath)
-
-        let product = products[indexPath.row]
-        
-        var content = cell.defaultContentConfiguration()
-        content.text = product.name
-        content.secondaryText = product.tastes
-        cell.contentConfiguration = content
-        
-        return cell
-    }
+//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        products.count
+//    }
+//
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "menuCell", for: indexPath)
+//
+//        
+//        return cell
+//    }
     
 
     /*

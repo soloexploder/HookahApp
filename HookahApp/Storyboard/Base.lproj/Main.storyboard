@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -45,44 +46,14 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="FA6-rQ-7ya" kind="relationship" relationship="viewControllers" id="Q3T-hf-MWk"/>
                         <segue destination="KjE-Gy-1YI" kind="relationship" relationship="viewControllers" id="KI7-zd-nsZ"/>
                         <segue destination="UmQ-gs-8Z8" kind="relationship" relationship="viewControllers" id="QQ4-T6-pob"/>
+                        <segue destination="FFR-WW-BtQ" kind="relationship" relationship="viewControllers" id="Plz-A5-ffK"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2CQ-8Q-FWi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-504.34782608695656" y="122.54464285714285"/>
-        </scene>
-        <!--Root View Controller-->
-        <scene sceneID="ZFP-EC-RnZ">
-            <objects>
-                <tableViewController id="FA6-rQ-7ya" customClass="MixViewController" customModule="HookahApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fCf-ap-aly">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mixCell" id="pN5-KT-NnA">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pN5-KT-NnA" id="bXH-PA-aYU">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="FA6-rQ-7ya" id="mZj-W6-Iji"/>
-                            <outlet property="delegate" destination="FA6-rQ-7ya" id="OU1-pb-ajL"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="Bio-k6-dOi"/>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Og5-cX-Msg"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aOc-Ay-nMM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-504" y="927"/>
         </scene>
         <!--DenStoryBoard-->
         <scene sceneID="cZp-MH-2yb">
@@ -93,6 +64,108 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hV3-kd-crt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="378" y="605"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="zf3-1s-cKn">
+            <objects>
+                <viewController id="FFR-WW-BtQ" customClass="MixesViewController" customModule="HookahApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9h0-OP-SDa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fOS-YL-eQ2">
+                                <rect key="frame" x="16" y="153" width="382" height="590"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43x-oB-clT">
+                                        <rect key="frame" x="151.5" y="0.0" width="79" height="65"/>
+                                        <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="44"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="tasteButtonPressed:" destination="FFR-WW-BtQ" eventType="touchUpInside" id="fgq-Jz-hjk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9b-2b-frx">
+                                        <rect key="frame" x="151.5" y="75" width="79" height="65"/>
+                                        <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="44"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="tasteButtonPressed:" destination="FFR-WW-BtQ" eventType="touchUpInside" id="BfI-2j-hcb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIB-XS-Cor">
+                                        <rect key="frame" x="151.5" y="150" width="79" height="65"/>
+                                        <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="44"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="tasteButtonPressed:" destination="FFR-WW-BtQ" eventType="touchUpInside" id="FVc-kr-Zwb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5v-HL-Ofh">
+                                        <rect key="frame" x="151.5" y="225" width="79" height="65"/>
+                                        <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="44"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="tasteButtonPressed:" destination="FFR-WW-BtQ" eventType="touchUpInside" id="cvE-KK-VPn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bT4-Tu-1jT">
+                                        <rect key="frame" x="151.5" y="300" width="79" height="65"/>
+                                        <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="44"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="tasteButtonPressed:" destination="FFR-WW-BtQ" eventType="touchUpInside" id="2rN-eY-eqm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HXg-29-REA">
+                                        <rect key="frame" x="151.5" y="375" width="79" height="65"/>
+                                        <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="44"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="tasteButtonPressed:" destination="FFR-WW-BtQ" eventType="touchUpInside" id="qBh-db-c37"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="888-jx-Mpn">
+                                        <rect key="frame" x="151.5" y="450" width="79" height="65"/>
+                                        <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="44"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="tasteButtonPressed:" destination="FFR-WW-BtQ" eventType="touchUpInside" id="5YA-3q-GdN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXi-sP-i4a">
+                                        <rect key="frame" x="151.5" y="525" width="79" height="65"/>
+                                        <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="44"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="tasteButtonPressed:" destination="FFR-WW-BtQ" eventType="touchUpInside" id="9SZ-58-qbn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Qeo-uT-x7u"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fOS-YL-eQ2" firstAttribute="leading" secondItem="Qeo-uT-x7u" secondAttribute="leading" constant="16" id="eHf-km-4Jt"/>
+                            <constraint firstItem="Qeo-uT-x7u" firstAttribute="trailing" secondItem="fOS-YL-eQ2" secondAttribute="trailing" constant="16" id="n8K-gL-GrL"/>
+                            <constraint firstItem="fOS-YL-eQ2" firstAttribute="centerY" secondItem="9h0-OP-SDa" secondAttribute="centerY" id="vpt-HI-si2"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="f99-nM-Wpg"/>
+                    <connections>
+                        <outletCollection property="tasteButtons" destination="43x-oB-clT" collectionClass="NSMutableArray" id="46m-GA-avV"/>
+                        <outletCollection property="tasteButtons" destination="b9b-2b-frx" collectionClass="NSMutableArray" id="VQp-Wf-kag"/>
+                        <outletCollection property="tasteButtons" destination="cIB-XS-Cor" collectionClass="NSMutableArray" id="NaZ-Zg-qUO"/>
+                        <outletCollection property="tasteButtons" destination="a5v-HL-Ofh" collectionClass="NSMutableArray" id="Qjt-LQ-sQp"/>
+                        <outletCollection property="tasteButtons" destination="bT4-Tu-1jT" collectionClass="NSMutableArray" id="2Vo-rh-XYT"/>
+                        <outletCollection property="tasteButtons" destination="HXg-29-REA" collectionClass="NSMutableArray" id="fnS-6i-V8l"/>
+                        <outletCollection property="tasteButtons" destination="888-jx-Mpn" collectionClass="NSMutableArray" id="db3-Bu-jeb"/>
+                        <outletCollection property="tasteButtons" destination="fXi-sP-i4a" collectionClass="NSMutableArray" id="5jg-k3-azt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KwB-WH-1sh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-504.34782608695656" y="986.38392857142856"/>
         </scene>
     </scenes>
     <resources>

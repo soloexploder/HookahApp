@@ -5,36 +5,53 @@
 //  Created by Alex Tegai on 21.04.2021.
 //
 
-
-
 struct Product {
     
     let name: String
-    let tastes: String
     let tobacco: String
-    
-    
+    let tastes: [Taste]
+
+    static func getProduct() -> [Product] {
+        
+            [
+                Product(name: "Крымский Вайб",
+                        tobacco: "Duft",
+                        tastes: [
+                            Taste(title: "дыня", type: .melon),
+                            Taste(title: "арбуз", type: .watermelon),
+                            Taste(title: "персик", type: .peach)
+            ]),
+            
+                Product(name: "Камчатский панч",
+                        tobacco: "Duft",
+                        tastes: [
+                            Taste(title: "дыня", type: .melon),
+                            Taste(title: "чай", type: .watermelon),
+                            Taste(title: "черника", type: .peach)
+            ]),
+            
+                Product(name: "Донской чилл",
+                        tobacco: "Duft",
+                        tastes: [
+                            Taste(title: "нуга", type: .melon),
+                            Taste(title: "дыня", type: .watermelon),
+                            Taste(title: "лимон", type: .peach)
+            ]),
+            
+                Product(name: "Приморский шейк",
+                        tobacco: "Duft",
+                        tastes: [
+                            Taste(title: "черника", type: .melon),
+                            Taste(title: "кокос", type: .watermelon),
+                            Taste(title: "ананас", type: .peach)
+            ]),  
+        ]   
+    }
 }
 
-extension Product{
-    static func getProduct() -> [Product] {
-        [
-            Product(name: "Крымский Вайб", tastes: "дыня, арбуз, персик", tobacco: "Duft"),
-            Product(name: "Камчатский панч", tastes: "дыня, чай, черника", tobacco: "Duft"),
-            
-            Product(
-                name: "Донской чилл",
-                tastes: "нуга, дыня, лимон",
-                tobacco: "Duft"
-            ),
-            
-            Product(
-                name: "Приморский шейк",
-                tastes: "черника, кокос, ананас",
-                tobacco: "Duft"
-            )
-        ]
-    }
+struct Taste {
+    let title: String
+    let type: Mix
 }
 
 enum Mix: String {
@@ -55,9 +72,7 @@ enum Mix: String {
             return """
                     Донской чилл. Состав: нуга, дыня, лимон. Табак: "Duft".
                     Камчатский панч. Состав: дыня, чай, черника. Табак: "Duft".
-                                    name: "Крымский Вайб",
-                                    tastes: ["дыня, арбуз, персик"],
-                                    tobacco: "Duft"
+                    Крымский Вайб. Состав: дыня, арбуз, персик. Табак: "Duft"
                     """
         case .watermelon:
             return "арбуз ммм"
@@ -76,3 +91,5 @@ enum Mix: String {
         }
     }
 }
+
+
