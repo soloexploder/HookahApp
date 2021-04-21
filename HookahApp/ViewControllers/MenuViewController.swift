@@ -9,12 +9,12 @@ import UIKit
 
 class MenuViewController: UITableViewController {
 
-    var products: [Product] = []
+    var products = Product.getProduct()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Mixes"
+//        title = "Mixes"
 
     }
 
@@ -38,11 +38,11 @@ class MenuViewController: UITableViewController {
 
     // MARK: - Navigation
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let indexPath = tableView.indexPathForSelectedRow {
-            let detailVC = segue.destination as! DetailsViewController
-            detailVC.product = products[indexPath.row]
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let indexPath = tableView.indexPathForSelectedRow {
+//            let detailVC = segue.destination as! DetailsViewController
+//            detailVC.product = products[indexPath.row]
+//        }
+//    }
    
 }

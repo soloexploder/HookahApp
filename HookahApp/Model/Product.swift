@@ -9,13 +9,17 @@
 struct Product {
     
     let name: String
-    let tastes: [String]
+    let tastes: String
     let tobacco: String
-    
+ 
+}
+
+extension Product {
     static func getProduct() -> [Product] {
         [
-            Product(
-                name: "Крымский Вайб", tastes: ["Дыня, Арбуз, Персик"], tobacco: "Duft")
+            Product(name: "Крымский Вайб", tastes: "Дыня, Арбуз, Персик", tobacco: "Duft"),
+            Product(name: "Крымский Вайб", tastes: "Дыня, Арбуз, Персик", tobacco: "Duft"),
+            Product(name: "Крымский Вайб", tastes: "Дыня, Арбуз, Персик", tobacco: "Duft")
         ]
     }
 }
