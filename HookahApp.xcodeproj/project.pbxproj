@@ -19,6 +19,7 @@
 		8B560D04262DCCF100BB1849 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B560D02262DCCF100BB1849 /* Main.storyboard */; };
 		8B560D06262DCCFB00BB1849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B560D05262DCCFB00BB1849 /* Assets.xcassets */; };
 		8B560D09262DCCFB00BB1849 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B560D07262DCCFB00BB1849 /* LaunchScreen.storyboard */; };
+		ABA4C3F9263030CB0075B717 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA4C3F8263030CB0075B717 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		8B560D05262DCCFB00BB1849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B560D08262DCCFB00BB1849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B560D0A262DCCFB00BB1849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABA4C3F8263030CB0075B717 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailsViewController.swift; path = HookahApp/ViewControllers/DetailsViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				49D967EE263016240025311A /* MenuViewController.swift */,
 				49D967F1263016370025311A /* MixViewController.swift */,
 				49D967F4263016620025311A /* TobaccoViewController.swift */,
+				ABA4C3F8263030CB0075B717 /* DetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				8B560CFD262DCCF100BB1849 /* AppDelegate.swift in Sources */,
 				8B560CFF262DCCF100BB1849 /* SceneDelegate.swift in Sources */,
 				49D967EF263016240025311A /* MenuViewController.swift in Sources */,
+				ABA4C3F9263030CB0075B717 /* DetailsViewController.swift in Sources */,
 				49D967F2263016370025311A /* MixViewController.swift in Sources */,
 				49D967FA2630169C0025311A /* TabBarViewController.swift in Sources */,
 				49D967F5263016620025311A /* TobaccoViewController.swift in Sources */,
