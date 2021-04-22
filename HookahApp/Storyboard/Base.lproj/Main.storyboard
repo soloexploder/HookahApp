@@ -25,6 +25,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2ub-49-qQ3">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.85504164949999995" green="0.55591769400000002" blue="0.04104126953" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                            <color key="textColor" red="0.4333871305" green="0.7950142026" blue="0.68497180940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="Bbn-1c-aBM" kind="relationship" relationship="rootViewController" id="OgB-lI-lmM"/>
@@ -43,12 +48,13 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OWH-Z6-kB4">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.4333871305" green="0.7950142026" blue="0.68497180940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.85504164949999995" green="0.55591769400000002" blue="0.04104126953" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="KjE-Gy-1YI" kind="relationship" relationship="viewControllers" id="KI7-zd-nsZ"/>
-                        <segue destination="UmQ-gs-8Z8" kind="relationship" relationship="viewControllers" id="QQ4-T6-pob"/>
                         <segue destination="FFR-WW-BtQ" kind="relationship" relationship="viewControllers" id="Plz-A5-ffK"/>
+                        <segue destination="UmQ-gs-8Z8" kind="relationship" relationship="viewControllers" id="kJI-4P-Maf"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2CQ-8Q-FWi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -65,7 +71,7 @@
             </objects>
             <point key="canvasLocation" x="378" y="605"/>
         </scene>
-        <!--Item-->
+        <!--Mix-->
         <scene sceneID="zf3-1s-cKn">
             <objects>
                 <viewController id="FFR-WW-BtQ" customClass="MixesViewController" customModule="HookahApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -74,68 +80,84 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fOS-YL-eQ2">
-                                <rect key="frame" x="16" y="153" width="382" height="590"/>
+                                <rect key="frame" x="16" y="173" width="382" height="550"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43x-oB-clT">
-                                        <rect key="frame" x="151.5" y="0.0" width="79" height="65"/>
-                                        <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="44"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="127.5" y="0.0" width="127" height="60"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="44"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="0.4333871305" green="0.7950142026" blue="0.68497180940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="tasteButtonPressed:" destination="FFR-WW-BtQ" eventType="touchUpInside" id="fgq-Jz-hjk"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9b-2b-frx">
-                                        <rect key="frame" x="151.5" y="75" width="79" height="65"/>
-                                        <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="44"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="127.5" y="70" width="127" height="60"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="44"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="0.4333871305" green="0.7950142026" blue="0.68497180940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="tasteButtonPressed:" destination="FFR-WW-BtQ" eventType="touchUpInside" id="BfI-2j-hcb"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIB-XS-Cor">
-                                        <rect key="frame" x="151.5" y="150" width="79" height="65"/>
-                                        <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="44"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="127.5" y="140" width="127" height="60"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="44"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="0.4333871305" green="0.7950142026" blue="0.68497180940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="tasteButtonPressed:" destination="FFR-WW-BtQ" eventType="touchUpInside" id="FVc-kr-Zwb"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5v-HL-Ofh">
-                                        <rect key="frame" x="151.5" y="225" width="79" height="65"/>
-                                        <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="44"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="127.5" y="210" width="127" height="60"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="44"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="0.4333871305" green="0.7950142026" blue="0.68497180940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="tasteButtonPressed:" destination="FFR-WW-BtQ" eventType="touchUpInside" id="cvE-KK-VPn"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bT4-Tu-1jT">
-                                        <rect key="frame" x="151.5" y="300" width="79" height="65"/>
-                                        <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="44"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="127.5" y="280" width="127" height="60"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="44"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="0.4333871305" green="0.7950142026" blue="0.68497180940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="tasteButtonPressed:" destination="FFR-WW-BtQ" eventType="touchUpInside" id="2rN-eY-eqm"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HXg-29-REA">
-                                        <rect key="frame" x="151.5" y="375" width="79" height="65"/>
-                                        <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="44"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="127.5" y="350" width="127" height="60"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="44"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="0.4333871305" green="0.7950142026" blue="0.68497180940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="tasteButtonPressed:" destination="FFR-WW-BtQ" eventType="touchUpInside" id="qBh-db-c37"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="888-jx-Mpn">
-                                        <rect key="frame" x="151.5" y="450" width="79" height="65"/>
-                                        <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="44"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="127.5" y="420" width="127" height="60"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="44"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="0.4333871305" green="0.7950142026" blue="0.68497180940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="tasteButtonPressed:" destination="FFR-WW-BtQ" eventType="touchUpInside" id="5YA-3q-GdN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXi-sP-i4a">
-                                        <rect key="frame" x="151.5" y="525" width="79" height="65"/>
-                                        <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="44"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="127.5" y="490" width="127" height="60"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="44"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="0.4333871305" green="0.7950142026" blue="0.68497180940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="tasteButtonPressed:" destination="FFR-WW-BtQ" eventType="touchUpInside" id="9SZ-58-qbn"/>
                                         </connections>
@@ -151,7 +173,9 @@
                             <constraint firstItem="fOS-YL-eQ2" firstAttribute="centerY" secondItem="9h0-OP-SDa" secondAttribute="centerY" id="vpt-HI-si2"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="f99-nM-Wpg"/>
+                    <tabBarItem key="tabBarItem" title="Mix" image="free-icon-combination-32076" selectedImage="free-icon-combination-32076" id="f99-nM-Wpg">
+                        <color key="badgeColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <connections>
                         <outletCollection property="tasteButtons" destination="43x-oB-clT" collectionClass="NSMutableArray" id="46m-GA-avV"/>
                         <outletCollection property="tasteButtons" destination="b9b-2b-frx" collectionClass="NSMutableArray" id="VQp-Wf-kag"/>
@@ -176,10 +200,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpf-I9-QN1">
-                                <rect key="frame" x="16" y="422" width="382" height="52.5"/>
-                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="45"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpf-I9-QN1">
+                                <rect key="frame" x="16" y="430" width="382" height="36"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="33"/>
+                                <color key="textColor" red="0.85504164949999995" green="0.55591769400000002" blue="0.04104126953" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -202,6 +226,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="free-icon-combination-32076" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

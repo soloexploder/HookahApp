@@ -12,29 +12,31 @@ class MixesViewController: UIViewController {
     @IBOutlet var tasteButtons: [UIButton]!
     
     var products = Product.getProduct()
-    var tasteChoice: [Taste] = []
-    var tastes = Taste.getTaste()
+    let tastes = Mix.getACases()
+    var test: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         showTasteButtons(with: tastes)
     }
     
+    // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let mixChoiceVC = segue.destination as? MixChoiceViewController else { return }
-        mixChoiceVC.tasteChoice = tasteChoice
+        mixChoiceVC.test = test
     }
 
-    private func showTasteButtons(with tastes: [Taste]) {
+    // MARK: - Change Buttons Names
+    private func showTasteButtons(with tastes: [Mix]) {
         for (button, taste) in zip(tasteButtons, tastes) {
-            button.setTitle(taste.title, for: .normal)
+            button.setTitle(taste.rawValue, for: .normal)
         }
     }
-    
+    // MARK: - IBActions
     @IBAction func tasteButtonPressed(_ sender: UIButton) {
         guard let buttonIndex = tasteButtons.firstIndex(of: sender) else { return }
         let taste = tastes[buttonIndex]
-        tasteChoice.append(taste)
+        test = taste.mixer
         
         performSegue(withIdentifier: "showChoiceResult", sender: nil)
     }

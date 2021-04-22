@@ -9,101 +9,60 @@ struct Product {
 
     let name: String
     let tobacco: String
-//    let tastes: [Taste]
 
     static func getProduct() -> [Product]{
-
             [
-                Product(name: "Крымский Вайб",
-                        tobacco: "Duft"
-//                        tastes: [
-//                            Taste(title: "дыня", type: .melon),
-//                            Taste(title: "арбуз", type: .watermelon),
-//                            Taste(title: "персик", type: .peach)
-//            ]
-                        ),
-
-                Product(name: "Камчатский панч",
-                        tobacco: "Duft"
-//                        tastes: [
-//                            Taste(title: "дыня", type: .melon),
-//                            Taste(title: "чай", type: .watermelon),
-//                            Taste(title: "черника", type: .peach)
-//            ]
-                        ),
-
-                Product(name: "Донской чилл",
-                        tobacco: "Duft"
-//                        tastes: [
-//                            Taste(title: "ананас", type: .melon),
-//                            Taste(title: "дыня", type: .watermelon),
-//                            Taste(title: "лимон", type: .peach)
-//            ]
-                        ),
-
-                Product(name: "Приморский шейк",
-                        tobacco: "Duft"
-//                        tastes: [
-//                            Taste(title: "черника", type: .melon),
-//                            Taste(title: "кокос", type: .watermelon),
-//                            Taste(title: "ананас", type: .peach)
-//            ]
-                        )
+                Product(name: "Крымский Вайб", tobacco: "Duft"),
+                Product(name: "Камчатский панч", tobacco: "Duft"),
+                Product(name: "Донской чилл", tobacco: "Duft"),
+                Product(name: "Приморский шейк", tobacco: "Duft")
         ]
     }
 }
 
-struct Taste {
-    let title: String
-    let type: Mix
-    
-    static func getTaste() -> [Taste] {
-        [
-            Taste(title: "дыня", type: .melon),
-            Taste(title: "арбуз", type: .watermelon),
-            Taste(title: "персик", type: .peach),
-            Taste(title: "чай", type: .watermelon),
-            Taste(title: "черника", type: .peach),
-            Taste(title: "лимон", type: .peach),
-            Taste(title: "кокос", type: .watermelon),
-            Taste(title: "ананас", type: .peach)
-        ]
-    }
-}
-
-enum Mix: String {
+enum Mix: String, CaseIterable {
         
-    case melon = """
-                 Донской чилл. Состав: нуга, дыня, лимон. Табак: "Duft".
-                 Камчатский панч. Состав: дыня, чай, черника. Табак: "Duft".
-                 Крымский Вайб. Состав: дыня, арбуз, персик. Табак: "Duft"
-                 """
-    case watermelon = "арбуз"
-    case peach = "персик"
-    case tea = "чай"
-    case blueberry = "черника"
-    case lemon = "лимон"
-    case coconut = "кокос"
-    case pineapple = "ананас"
+    case melon = "Дыня"
+    case watermelon = "Арбуз"
+    case peach = "Персик"
+    case tea = "Чай"
+    case blueberry = "Черника"
+    case lemon = "Лимон"
+    case coconut = "Кокос"
+    case pineapple = "Ананас"
+    
+    static func getACases() -> [Mix] {
+        return Mix.allCases
+    }
     
     var mixer: String {
         switch self {
         case .melon:
-            return "melon"
+            return """
+            Крымский вайб - дыня, арбуз, персик.
+
+            Донской чилл - нуга, дыня, лимон.
+
+            Камчатский панч - чай, черника, дыня.
+            """
         case .watermelon:
-            return "арбуз ммм"
+            return "Крымский вайб - дыня, арбуз, персик."
         case .peach:
-            return "персик ммм"
+            return "Крымский вайб - дыня, арбуз, персик."
         case .tea:
-            return "чай ммм"
+            return "Камчатский панч - чай, черника, дыня."
         case .blueberry:
-            return "черника ммм"
+            return """
+            Приморский шейк - черника, кокос, ананас.
+
+            Камчатский панч - чай, черника, дыня.
+            """
         case .lemon:
-            return "лимон ммм"
+            return "Донской чилл - нуга, дыня, лимон."
         case .coconut:
-            return "кокос ммм"
+            return "Приморский шейк - черника, кокос, ананас."
         case .pineapple:
-            return "ананас ммм"
+            return "Приморский шейк - черника, кокос, ананас"
         }
     }
 }
