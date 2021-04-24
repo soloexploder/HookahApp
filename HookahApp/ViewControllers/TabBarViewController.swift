@@ -10,6 +10,7 @@ import UIKit
 class TabBarViewController: UITabBarController {
 
     let products = Product.getProduct()
+    let tobacco = Tobacco.getTobacco()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +29,7 @@ class TabBarViewController: UITabBarController {
             } else if let mixVC = $0 as? MixViewController {
                 mixVC.products = products
             } else if let tobaccoVC = $0 as? TobaccoViewController {
-                tobaccoVC.products = products
+                tobaccoVC.tobaccos = tobacco
             }
         }
     }
