@@ -5,9 +5,8 @@
 //  Created by Alex Tegai on 21.04.2021.
 //
 
-
 struct Product {
-    
+
     let name: String
     let tastes: [String]
     let tobacco: String
@@ -41,35 +40,51 @@ struct Product {
     }
 }
 
-enum Mix: String {
+enum Mix: String, CaseIterable {
         
-    case melon = "дыня"
-    case watermelon = "арбуз"
-    case peach = "персик"
-    case tea = "чай"
-    case blueberry = "черника"
-    case lemon = "лимон"
-    case coconut = "кокос"
-    case pineapple = "ананас"
+    case melon = "Дыня"
+    case watermelon = "Арбуз"
+    case peach = "Персик"
+    case tea = "Чай"
+    case blueberry = "Черника"
+    case lemon = "Лимон"
+    case coconut = "Кокос"
+    case pineapple = "Ананас"
+    
+    static func getTasteName() -> [Mix] {
+        return Mix.allCases
+    }
     
     var mixer: String {
         switch self {
         case .melon:
-            <#code#>
+            return """
+            Крымский вайб - дыня, арбуз, персик.
+
+            Донской чилл - нуга, дыня, лимон.
+
+            Камчатский панч - чай, черника, дыня.
+            """
         case .watermelon:
-            <#code#>
+            return "Крымский вайб - дыня, арбуз, персик."
         case .peach:
-            <#code#>
+            return "Крымский вайб - дыня, арбуз, персик."
         case .tea:
-            <#code#>
+            return "Камчатский панч - чай, черника, дыня."
         case .blueberry:
-            <#code#>
+            return """
+            Приморский шейк - черника, кокос, ананас.
+
+            Камчатский панч - чай, черника, дыня.
+            """
         case .lemon:
-            <#code#>
+            return "Донской чилл - нуга, дыня, лимон."
         case .coconut:
-            <#code#>
+            return "Приморский шейк - черника, кокос, ананас."
         case .pineapple:
-            <#code#>
+            return "Приморский шейк - черника, кокос, ананас"
         }
     }
 }
+
+
