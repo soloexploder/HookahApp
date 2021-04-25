@@ -31,7 +31,7 @@ enum Mix: String, CaseIterable {
     case coconut = "Кокос"
     case pineapple = "Ананас"
     
-    static func getACases() -> [Mix] {
+    static func getTaste() -> [Mix] {
         return Mix.allCases
     }
     
