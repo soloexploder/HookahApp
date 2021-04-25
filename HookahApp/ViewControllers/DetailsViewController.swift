@@ -17,7 +17,7 @@ class DetailsViewController: UIViewController {
         super.viewDidLoad()
         
         title = product.name
-//        tastesLabel.text = product.tastes.joined(separator: ", ")
+        tastesLabel.text = product.tastes
     }
 
 
