@@ -16,35 +16,9 @@ struct Product {
 extension Product {
     static func getProduct() -> [Product] {
         [
-<<<<<<< HEAD
-            Product(
-                name: "Крымский Вайб",
-                tastes: ["дыня, арбуз, персик"],
-                tobacco: "Duft"
-            ),
-            
-            Product(
-                name: "Камчатский панч",
-                tastes: ["дыня, чай, черника"],
-                tobacco: "Duft"
-            ),
-            
-            Product(
-                name: "Донской чилл",
-                tastes: ["нуга, дыня, лимон"],
-                tobacco: "Duft"
-            ),
-            
-            Product(
-                name: "Приморский шейк",
-                tastes: ["черника, кокос, ананас"],
-                tobacco: "Duft"
-            )
-=======
             Product(name: "Крымский Вайб", tastes: "Дыня, Арбуз, Персик", tobacco: "Duft"),
             Product(name: "Крымский Вайб", tastes: "Дыня, Арбуз, Персик", tobacco: "Duft"),
             Product(name: "Крымский Вайб", tastes: "Дыня, Арбуз, Персик", tobacco: "Duft")
->>>>>>> Tio
         ]
     }
 }
