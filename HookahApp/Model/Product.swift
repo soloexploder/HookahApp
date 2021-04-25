@@ -8,11 +8,15 @@
 struct Product {
 
     let name: String
-    let tastes: [String]
+    let tastes: String
     let tobacco: String
-    
+ 
+}
+
+extension Product {
     static func getProduct() -> [Product] {
         [
+<<<<<<< HEAD
             Product(
                 name: "Крымский Вайб",
                 tastes: ["дыня, арбуз, персик"],
@@ -36,6 +40,11 @@ struct Product {
                 tastes: ["черника, кокос, ананас"],
                 tobacco: "Duft"
             )
+=======
+            Product(name: "Крымский Вайб", tastes: "Дыня, Арбуз, Персик", tobacco: "Duft"),
+            Product(name: "Крымский Вайб", tastes: "Дыня, Арбуз, Персик", tobacco: "Duft"),
+            Product(name: "Крымский Вайб", tastes: "Дыня, Арбуз, Персик", tobacco: "Duft")
+>>>>>>> Tio
         ]
     }
 }
