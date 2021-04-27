@@ -26,7 +26,7 @@ class TabBarViewController: UITabBarController {
             
             if let menuVC = $0 as? MenuViewController {
                 menuVC.products = products
-            } else if let mixVC = $0 as? MixViewController {
+            } else if let mixVC = $0 as? MixesViewController {
                 mixVC.products = products
             } else if let tobaccoVC = $0 as? TobaccoViewController {
                 tobaccoVC.tobaccos = tobacco

@@ -3,19 +3,26 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+<<<<<<< HEAD
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+=======
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Mixes-->
+>>>>>>> Tio
         <scene sceneID="5gJ-cN-l3m">
             <objects>
-                <tableViewController restorationIdentifier="TioViewController" storyboardIdentifier="TioViewController" id="Kid-3O-kAu" customClass="MenuViewController" customModule="HookahApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="TioStoryBoard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Kid-3O-kAu" customClass="MenuViewController" customModule="HookahApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QcK-MS-6OD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuCell" id="gy5-Hr-HDV">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
@@ -34,8 +41,12 @@
                             <outlet property="delegate" destination="Kid-3O-kAu" id="e7H-IE-PnT"/>
                         </connections>
                     </tableView>
+<<<<<<< HEAD
+                    <tabBarItem key="tabBarItem" title="Item" image="icons8-menu-24" id="a6I-R7-kZc"/>
+=======
                     <tabBarItem key="tabBarItem" title="Item" id="QJU-Wa-P6D"/>
                     <navigationItem key="navigationItem" title="Mixes" id="EDP-sc-3P8"/>
+>>>>>>> Tio
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9u0-7Q-NYI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -87,8 +98,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="icons8-menu-24" width="24" height="24"/>
     </resources>
 </document>

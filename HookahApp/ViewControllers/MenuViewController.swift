@@ -43,7 +43,5 @@ class MenuViewController: UITableViewController {
             let detailVC = segue.destination as! DetailsViewController
             detailVC.product = products[indexPath.row]
         }
-        
     }
-   
 }
