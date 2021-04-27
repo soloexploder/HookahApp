@@ -31,7 +31,7 @@
 		49D9680F263028210025311A /* DenStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DenStoryBoard.storyboard; sourceTree = "<group>"; };
 		49D968172630607E0025311A /* MixesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixesViewController.swift; sourceTree = "<group>"; };
 		49D9681E263073960025311A /* MixChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixChoiceViewController.swift; sourceTree = "<group>"; };
-		8B560CF9262DCCF100BB1849 /* HookahApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HookahApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B560CF9262DCCF100BB1849 /* HookahApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = HookahApp.app; path = "/Users/titoai/Desktop/GitProject/HookahApp/build/Debug-iphoneos/HookahApp.app"; sourceTree = "<absolute>"; };
 		8B560CFC262DCCF100BB1849 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B560CFE262DCCF100BB1849 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8B560D03262DCCF100BB1849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,16 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				8B560CFB262DCCF100BB1849 /* HookahApp */,
-				8B560CFA262DCCF100BB1849 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		8B560CFA262DCCF100BB1849 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8B560CF9262DCCF100BB1849 /* HookahApp.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		8B560CFB262DCCF100BB1849 /* HookahApp */ = {
@@ -155,7 +146,7 @@
 				Base,
 			);
 			mainGroup = 8B560CF0262DCCF100BB1849;
-			productRefGroup = 8B560CFA262DCCF100BB1849 /* Products */;
+			productRefGroup = 8B560CF0262DCCF100BB1849;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (

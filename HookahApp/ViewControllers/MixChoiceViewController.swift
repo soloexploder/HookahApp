@@ -11,11 +11,11 @@ class MixChoiceViewController: UIViewController {
 
     @IBOutlet var mixDescription: UILabel!
 
-    var test: String?
+    var tasteChoice: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        mixDescription.text = test
+        mixDescription.text = tasteChoice
     }
 }
 
