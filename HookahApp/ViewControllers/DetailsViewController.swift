@@ -19,6 +19,4 @@ class DetailsViewController: UIViewController {
         title = product.name
         tastesLabel.text = product.tastes
     }
-
-
 }
